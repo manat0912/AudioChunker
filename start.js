@@ -11,7 +11,7 @@ module.exports = {
           PYTHONUNBUFFERED: "1"
         },
         message: [
-          "streamlit run app.py --server.port {{port}} --server.headless true"
+          "streamlit run app.py --server.port {{port}} --server.headless true --server.enableXsrfProtection false --server.enableCORS false --server.maxUploadSize 2048"
         ],
         on: [{
           event: "/(http:\\/\\/[0-9.:]+)/",
