@@ -1,0 +1,12 @@
+{
+  "title": "Audiochunker",
+  "description": "Slice any audio file into fixed-length (10-60s) clips and export them all at once. Powered by ffmpeg.",
+  "icon": "icon.png",
+  "links": [
+    {
+      "title": "github",
+      "value": "https://github.com/manat0912/AudioChunker"
+    }
+  ],
+  "posts": []
+}
