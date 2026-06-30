@@ -1,0 +1,11 @@
+[server]
+# Audiochunker runs behind Pinokio's reverse proxy. With XSRF/CORS enabled,
+# Streamlit's file-upload POST (/_stcore/upload_file/...) is rejected by the
+# proxy, which surfaces as "Invalid HTTP request received." and a failed
+# upload. Disabling them lets uploads work through the proxy.
+enableXsrfProtection = false
+enableCORS = false
+enableWebsocketCompression = false
+# Allow large uncompressed files (e.g. WAV) — default is 200 (MB).
+maxUploadSize = 2048
+headless = true
